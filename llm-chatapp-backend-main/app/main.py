@@ -25,7 +25,7 @@ app = FastAPI(title="LLM Chat App", lifespan=lifespan)
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://llm-chatapp-backend.vercel.app","http://localhost:5173"],
+    allow_origins=["https://chat-llm-frontend.vercel.app/","http://localhost:5173"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
